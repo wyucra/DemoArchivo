@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!--
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <TextView
+        android:text="RED"
+        android:id="@+id/TextView01"
+        android:layout_height="wrap_content"
+        android:background="#f00"
+        android:gravity="center"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:padding="25dp"></TextView>
+
+
+
+
+    <TextView
+        android:text="ORANGE"
+        android:layout_height="wrap_content"
+        android:background="#ffa500"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="25dp"></TextView>
+
+
+
+    <TextView
+        android:text="YELLOW"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="25dp"></TextView>
+
+
+    <TextView
+        android:text="BLUE"
+        android:layout_height="wrap_content"
+        android:background="#00f"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:padding="25dp"></TextView>
+
+
+    <TextView
+        android:text="GREEN"
+        android:layout_height="wrap_content"
+        android:background="#0f0"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/TextView05"
+        android:padding="25dp"
+        android:layout_centerVertical="true"></TextView>
+
+
+    <TextView
+        android:text="INDIGO"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/TextView05"
+        android:background="#4b0082"
+        android:padding="25dp"
+        android:layout_centerVertical="true"></TextView>
+
+
+  <TextView
+        android:text="VIOLET"
+        android:layout_height="wrap_content"
+        android:background="#ee82ee"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/TextView07"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:padding="25dp"></TextView>
+
+</RelativeLayout>
+
+-->
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/carreGlobalInterieur"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/grisTresClair" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_deals"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/GroupLigneOne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grisClair"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/CategorieDeal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="My Category"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" >
+
+                    <TextView
+                        android:id="@+id/nouveauPrixVert"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10.99 €"
+                        android:textColor="@color/green"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/ancienPrixRouge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="6dp"
+
+                        android:text="20.90 €"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/reductionPrix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+
+                        android:text="(-34%)"
+                        android:textColor="@color/red"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ligneTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/titreEnGros"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:text="Here is an example of a compleete title in a TextView Android"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ligneFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dateAjout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+
+                    android:text="il y a 2 heures" />
+
+                <TextView
+                    android:id="@+id/siteWeb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+
+                    android:text="Amazon" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+-->
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context="com.examen.wyucra.examen.activities.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msjItem1"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+
+    <TextView  android:id="@+id/lblNombre"
+        android:text="Ingrese Datos"
+        android:height="40dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+  <EditText  android:id="@+id/txtNombre"
+      android:layout_height="40dp"
+      android:layout_weight="20dp"
+      android:layout_width="10dp"
+      android:hint="Apellido y nombres"
+      android:layout_toRightOf="@id/lblNombre"
+      android:layout_alignParentRight="true"
+      android:inputType="textCapWords"
+       />
+
+        <Button  android:text="Registrar"
+            android:layout_width="wrap_content"
+            android:layout_alignRight="@id/txtNombre"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <EditText
+            android:id="@+id/EditText01"
+            android:hint="Enter some text..."
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent"
+            android:layout_toLeftOf="@+id/Button01"
+            android:layout_height="wrap_content"></EditText>
+        <Button
+            android:id="@+id/Button01"
+            android:text="Press Here!"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"></Button>
+    </RelativeLayout>
+
+    </LinearLayout>
+-->
+
+<!--
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.examen.wyucra.examen.activities.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msjItem1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Connections" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        >
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Connections" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal"
+            android:text="Connections" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>  -->
+

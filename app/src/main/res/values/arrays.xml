@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="distritos">
+        <item>Seleccione Distrito</item>
+        <item>Callao</item>
+        <item>Carmen de la Legua</item>
+        <item>Ventanilla</item>
+
+    </string-array>
+
+</resources>
